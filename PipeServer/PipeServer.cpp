@@ -146,6 +146,7 @@ DWORD WINAPI InstanceThread(LPVOID lpvParam) {
 	return 1;
 }
 
+// This method handles the incomming request and populates the buffer of pchReply with the response data.
 VOID GetAnswerToRequest(LPTSTR pchRequest, LPTSTR pchReply, LPDWORD pchBytes) {
 	_tprintf(TEXT("Client request string:\"%s\"\n"), pchRequest);
 	if (FAILED(StringCchCopy(pchReply, BUFSIZE, TEXT("Default answer from server")))) {

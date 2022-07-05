@@ -8,7 +8,7 @@
 int _tmain(int argc, TCHAR* argv[]) {
 	HANDLE hPipe;
 	LPCTSTR lpvMessage = TEXT("Default message from client.");
-	LPTSTR chBuf[BUFSIZE];
+	LPCTSTR chBuf[BUFSIZE];
 	BOOL fSuccess = FALSE;
 	DWORD cbRead, cbToWrite, cbWritten, dwMode;
 	LPCTSTR lpszPipename = TEXT("\\\\.\\pipe\\mynamedpipe");
